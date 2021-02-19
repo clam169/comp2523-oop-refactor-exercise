@@ -57,11 +57,7 @@ export class LinkedListGroup implements ISortable {
 
   compare(leftPos: number, rightPos: number): boolean {
     // Implement this part yourself
-    if (this.at(leftPos).data > this.at(rightPos).data) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.at(leftPos).data > this.at(rightPos).data;
   }
 
   swap(leftPos: number, rightPos: number): void {

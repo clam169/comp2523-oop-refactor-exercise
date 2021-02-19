@@ -19,10 +19,8 @@ const linkedListGroup = new LinkedListGroup();
 linkedListGroup.add(520);
 linkedListGroup.add(-10);
 linkedListGroup.add(-7);
-linkedListGroup.add(4000000);
+linkedListGroup.add(4);
 
-linkedListGroup.compare(0, 1)
 const sorter3 = new SortUtil(linkedListGroup);
-console.log("at sorter3.sort")
 sorter3.sort();
 linkedListGroup.print();

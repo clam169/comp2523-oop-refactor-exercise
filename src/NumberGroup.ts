@@ -8,16 +8,13 @@ export class NumberGroup implements ISortable {
   data: number[];
 
   get length(): number {
+    // Implement this part yourself
     return this.data.length;
   };
 
   compare(leftPos: number, rightPos: number): boolean {
     // Implement this part yourself
-    if (this.data[leftPos] > this.data[rightPos]){
-      return true;
-    } else {
-      return false;
-    }
+    return this.data[leftPos] > this.data[rightPos];
   }
 
   swap(left: number, right: number): void {

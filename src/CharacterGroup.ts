@@ -14,11 +14,7 @@ export class CharacterGroup implements ISortable {
 
   compare(leftPos: number, rightPos: number): boolean {
     // logic here
-    if (this.data[leftPos].toLowerCase() > this.data[rightPos].toLowerCase()) {
-      return true;
-    } else {
-      return false;
-    }
+    return this.data[leftPos].toLowerCase() > this.data[rightPos].toLowerCase();
   }
 
   swap(left: number, right: number): void {
